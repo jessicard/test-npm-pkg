@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jessicard/personal/test-npm-pkg',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jessicard/.npm/@jessicard/test-npm-pkg/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/jessicard/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/jessicard/.npm/@jessicard/test-npm-pkg/0.0.1/package.tgz',
+10 verbose tar pack   '/Users/jessicard/personal/test-npm-pkg' ]
+11 verbose tarball /Users/jessicard/.npm/@jessicard/test-npm-pkg/0.0.1/package.tgz
+12 verbose folder /Users/jessicard/personal/test-npm-pkg
+13 info prepublish @jessicard/test-npm-pkg@0.0.1
+14 verbose addLocalTarball adding from inside cache /Users/jessicard/.npm/@jessicard/test-npm-pkg/0.0.1/package.tgz
+15 verbose correctMkdir /Users/jessicard/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd @jessicard/test-npm-pkg@0.0.1
+17 verbose afterAdd /Users/jessicard/.npm/@jessicard/test-npm-pkg/0.0.1/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/jessicard/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/jessicard/.npm/@jessicard/test-npm-pkg/0.0.1/package/package.json written
+20 silly publish { name: '@jessicard/test-npm-pkg',
+20 silly publish   version: '0.0.1',
+20 silly publish   readme: 'ERROR: No README data found!',
+20 silly publish   _id: '@jessicard/test-npm-pkg@0.0.1',
+20 silly publish   scripts: {},
+20 silly publish   _shasum: 'f0cb1462b3d8dcc0cc8cc350bfc4b4928c766bdd',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name @jessicard/test-npm-pkg
+23 silly mapToRegistry scope (from package name) @jessicard
+24 silly mapToRegistry registry http://npm.githubcloud.dev/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: '@jessicard/test-npm-pkg',
+25 silly mapToRegistry   scope: '@jessicard',
+25 silly mapToRegistry   name: '@jessicard/test-npm-pkg',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri http://npm.githubcloud.dev/@jessicard%2ftest-npm-pkg
+27 verbose publish registryBase http://npm.githubcloud.dev/
+28 silly publish uploading /Users/jessicard/.npm/@jessicard/test-npm-pkg/0.0.1/package.tgz
+29 verbose request uri http://npm.githubcloud.dev/@jessicard%2ftest-npm-pkg
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 1:04:33 PM
+32 verbose request using bearer token for auth
+33 verbose request id 44e33d1d1aff87c1
+34 http request PUT http://npm.githubcloud.dev/@jessicard%2ftest-npm-pkg
+35 http 404 http://npm.githubcloud.dev/@jessicard%2ftest-npm-pkg
+36 verbose bad json Not Found
+37 error registry error parsing json
+38 verbose headers { server: 'nginx/1.10.2',
+38 verbose headers   date: 'Mon, 09 Jan 2017 21:04:34 GMT',
+38 verbose headers   'content-type': 'text/html; charset=utf-8',
+38 verbose headers   'transfer-encoding': 'chunked',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   status: '404 Not Found',
+38 verbose headers   'cache-control': 'no-cache',
+38 verbose headers   vary: 'X-PJAX',
+38 verbose headers   'x-ua-compatible': 'IE=Edge,chrome=1',
+38 verbose headers   'x-request-id': 'b63babb549e779bb48b7be5def7c7761',
+38 verbose headers   'x-runtime': '0.335101',
+38 verbose headers   'x-github-request-id': 'be4834bf-96ef-4405-bca8-c61d4d00ab93',
+38 verbose headers   'content-security-policy': 'default-src \'none\'; base-uri \'self\'; block-all-mixed-content; child-src render.githubusercontent.dev; connect-src \'self\' http://alambic.github.dev https://status.github.com api.github.dev https://github-cloud.s3.amazonaws.com ws://live.github.dev; font-src \'self\'; form-action \'self\' github.dev gist.github.dev; frame-ancestors \'none\'; img-src \'self\' data: http://alambic.github.dev http://github.dev:8081 https://identicons.github.com https://github-dev.s3.amazonaws.com *.githubusercontent.dev; media-src \'none\'; script-src \'self\'; style-src \'unsafe-inline\' \'self\'',
+38 verbose headers   'x-content-type-options': 'nosniff',
+38 verbose headers   'x-frame-options': 'deny',
+38 verbose headers   'x-xss-protection': '1; mode=block' }
+39 verbose request invalidating /Users/jessicard/.npm/npm.githubcloud.dev/_40jessicard_252ftest-npm-pkg on PUT
+40 error publish Failed PUT 404
+41 verbose stack SyntaxError: Unexpected token N
+41 verbose stack Not Found
+41 verbose stack     at Object.parse (native)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:199:23)
+41 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+41 verbose stack     at emitTwo (events.js:87:13)
+41 verbose stack     at Request.emit (events.js:172:7)
+41 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+41 verbose stack     at emitOne (events.js:82:20)
+41 verbose stack     at Request.emit (events.js:169:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+42 verbose cwd /Users/jessicard/personal/test-npm-pkg
+43 error Darwin 16.3.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.4.7
+46 error npm  v2.15.8
+47 error Unexpected token N
+47 error Not Found
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
